@@ -10,7 +10,6 @@ if(!array_key_exists($rubrique, $menu)){
 } 
 //
 
-
 $now = new DateTime();
 
 $articlesEdito = Utils::contentManager($articles_content, $now, 0, 4);
