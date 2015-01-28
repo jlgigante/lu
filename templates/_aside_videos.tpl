@@ -4,12 +4,12 @@
 			{*<h3>{$aside.title}</h3>*}
 		{*</header>*}
 		<ul>
-		{foreach from=$aside.content key=myId item=i name=aside}
+		{foreach from=$aside_videos.content key=myId item=i name=aside}
 			<li>	
 				<a href="{$smarty.const.BASE_URL|escape}/{$aside.slug}/{$i.id}/{$i.slug}" >
                 <div class="row">
                     <div class="col-md-6">
-                        <img src="{$smarty.const.BASE_URL}/images/art_videos_{$i.visuel.0}" alt="{$i.title|strip_tags}" class="img-responsive"/>
+                        <img src="{$smarty.const.BASE_URL}/images/art_{$aside.slug}_{$i.visuel.0}" alt="{$i.title|strip_tags}" class="img-responsive"/>
                         </div>
                     <div class="col-md-6">
                         <h4>{$i.title}</h4>

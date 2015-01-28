@@ -73,7 +73,9 @@
                 FaceBook
             </div>
 
-
+            {block name="aside-articles"}
+                Content
+            {/block}
 
         </div>
     </div>

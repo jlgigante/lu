@@ -1,8 +1,6 @@
 <?php
 require_once('include/config.php');
 include("include/Utils.class.php");
-
-
 include("content.php");
 
 $rubrique = $_GET['rubrique'];
@@ -52,19 +50,17 @@ foreach($articles['content'] as $k=>$v){
 
 
 
-
-
-//require_once 'mea.php';
-
 //shuffle( $cleaned_list['content']);
 
 krsort($cleaned_list['content']);
 
 //$aside = Utils::contentManager($aside, $now, 0, 5);
 
-$smarty->assign('aside', $cleaned_list);
+//$smarty->assign('aside', $cleaned_list);
+//passer cette variable au tpl smarty
+$smarty->assign('aside_articles', $plusArticles);
+$smarty->assign('aside_videos', $autresArticles);
 
-var_dump($rubrique);
 
 //$smarty->assign('cleaned_list', array_slice($cleaned_list['content'], 0, 2));
 $article = $articles['content'][$_GET['id']];

@@ -50,10 +50,10 @@
 {/block}
 
 {block name="aside-videos"}
-	{include file="_aside.tpl"}
+    {include file="_aside_videos.tpl" }
 {/block}
 
 
-{block name="aside-videos"}
-    {include file="_aside.tpl"}
+{block name="aside-articles"}
+    {include file="_aside_articles.tpl"}
 {/block}
