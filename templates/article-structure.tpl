@@ -74,13 +74,7 @@
 
 
 
-            <div class="pub">
-                pub
-            </div>
-
-            <div class="fb">
-                <div class="fb-like-box" data-href="https://www.facebook.com/LU" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="true" data-show-border="true"></div>
-            </div>
+            {include file="_pub.tpl"}
 
             {block name="aside-articles"}
                 Content

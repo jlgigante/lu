@@ -1,10 +1,6 @@
 <section id="aside" class="bd">
-aside video
-    {*<header>*}
-    {*<h3>{$aside.title}</h3>*}
-    {*</header>*}
     <ul>
-        {foreach from=$aside_videos.content key=myId item=i name=aside}
+        {foreach from=$article.content key=myId item=i name=aside}
             <li>
                 <a href="{$smarty.const.BASE_URL|escape}/videos/{$i.id}/{$i.slug}">
                     <div class="row">
@@ -14,8 +10,6 @@ aside video
                         </div>
                         <div class="col-md-6">
                             <h4>{$i.title}</h4>
-
-                            <p>{$i.article|truncate:'60'}</p>
                         </div>
                     </div>
                 </a>

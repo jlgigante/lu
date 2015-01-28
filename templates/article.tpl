@@ -13,7 +13,7 @@
 
 
                 {if !empty($article.video) && isset($article.video) && $rubrique == 'videos'}
-                    <iframe width="618" height="464" src="//www.youtube.com/embed/{$article.video}?rel=0&amp;autoplay=1" frameborder="0" allowfullscreen></iframe>
+                    <iframe width="618" height="464" src="//www.youtube.com/embed/{$article.video}?rel=0&amp;autoplay=0" frameborder="0" allowfullscreen></iframe>
                 {/if}
 
                 {if isset($article.chapeau) && $article.chapeau != ''}
@@ -51,10 +51,10 @@
 {/block}
 
 {block name="aside-videos"}
-    {include file="_aside_videos.tpl" }
+    {include file="_aside_articles.tpl" rubrique="videos" article=$aside_videos}
 {/block}
 
 
 {block name="aside-articles"}
-    {include file="_aside_articles.tpl"}
+    {include file="_aside_articles.tpl" rubrique="articles" article=$aside_articles}
 {/block}

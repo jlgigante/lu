@@ -20,7 +20,7 @@ $menu = array(
 $smarty->assign('menu', $menu);
 
 
-$lorem = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc cursus magna vel enim convallis, eget consectetur neque pretium. Duis porta tellus vel nibh euismod, vitae scelerisque sapien vehicula. Suspendisse ut imperdiet neque, ut laoreet arcu. Curabitur interdum placerat massa ac varius. Aenean dignissim lacinia rhoncus. Aliquam erat volutpat. Curabitur quis eros in nulla dapibus consequat. Phasellus at nibh id nisi ornare euismod. Donec non laoreet orci. Etiam lacinia pellentesque purus, pellentesque tincidunt massa venenatis luctus. Vestibulum commodo eros id auctor congue. Morbi nec placerat elit. Cras sem tortor, sollicitudin a consequat eu, aliquet ut neque. Morbi vulputate neque id leo.";
+$lorem = "Vous voulez en savoir plus sur LU’Harmony ? Rendez-vous sur le stand LU au Salon International de l’Agriculture, du 21 février au 1er mars 2015. Et aussi sur <a href='http://www.lulechampdespossibles.fr' target=\"_blank\">www.lulechampdespossibles.fr</a>";
 
 
 $videos_content = array('title' => 'Videos',
@@ -78,8 +78,7 @@ $videos_content = array('title' => 'Videos',
  *
  */
 
-$art1 = "
-<strong>Du grain de blé au biscuit : tous engagés.</strong> Agriculteurs, organismes stockeurs, meuniers, sites de fabrication... Quand on sait que le blé est l’ingrédient principal de ses biscuits, on comprend pourquoi LU s’est entouré d’hommes et de femmes engagés, pour mettre en place la filière LU’Harmony. Chacun met son savoir-faire et son énergie à cultiver et à transformer le blé avec soin : ceux qui le cultivent selon la Charte LU’Harmony, ceux qui le collectent et le stockent dans des silos dédiés, ceux qui le transforment en farines et enfin ceux qui assemblent tous les ingrédients pour fabriquer les biscuits LU.
+$art1 = "<strong>Du grain de blé au biscuit : tous engagés.</strong> Agriculteurs, organismes stockeurs, meuniers, sites de fabrication... Quand on sait que le blé est l’ingrédient principal de ses biscuits, on comprend pourquoi LU s’est entouré d’hommes et de femmes engagés, pour mettre en place la filière LU’Harmony. Chacun met son savoir-faire et son énergie à cultiver et à transformer le blé avec soin : ceux qui le cultivent selon la Charte LU’Harmony, ceux qui le collectent et le stockent dans des silos dédiés, ceux qui le transforment en farines et enfin ceux qui assemblent tous les ingrédients pour fabriquer les biscuits LU.
 
 <strong>Une Charte exigeante à chaque étape de la culture du blé.</strong>
 Cette filière, ce sont des milliers d’hommes et de femmes mobilisés au quotidien autour de 49 pratiques agricoles destinées à améliorer la culture du blé. Parmi elles, la rotation des parcelles, l’observation poussée du climat ou encore l’utilisation de technologies de pointe pour ne traiter qu’en derniers recours et de façon ciblée. Chaque intervention sur une parcelle de blé LU’Harmony est rigoureusement répertoriée et chaque année, des contrôles sont réalisés par un organisme indépendant sur 10 % des agriculteurs partenaires et 100 % des meuniers.
@@ -96,6 +95,31 @@ Vous voulez en savoir plus sur LU’Harmony ? Rendez-vous sur le stand LU au Sal
 <small>(1) La FAO (l’Organisation de l’Alimentation et de l’Agriculture de l’ONU) estime que sur les 100 cultures qui produisent 90 % de l’alimentation mondiale, 71 dé- pendent de la pollinisation des abeilles.</small>
  ";
 
+
+$art2 = "<strong>1.  Plus de 1 700 agriculteurs partenaires</strong> en France sélectionnés le plus près possible des sites de fabrication des biscuits LU.
+
+<strong>2. 49 pratiques agricoles dans la charte LU’Harmony :</strong> parmi elles, la sélection des parcelles en fonction de la variété de blé, du précédent cultural et du travail du sol ou encore des pratiques spécifiques pour la biodiversité locale.
+
+<strong>3. Des actions pour la biodiversité locale</strong> avec l’implantation à proximité des champs de blé LU’Harmony, d’espaces fleuris qui offrent aux insectes pollinisateurs le pollen et le nectar dont ils ont besoin pour se nourrir.
+
+<strong>4. Un suivi du grain de blé au biscuit :</strong> une traçabilité bénéfique au consommateur qui connaît ainsi l’origine du blé utilisé dans les biscuits comme à l’agriculteur qui peut désormais connaître la destination finale de son blé.
+
+
+<smal>Vous voulez en savoir plus sur LU’Harmony ? Rendez-vous sur le stand LU au Salon International de l’Agriculture, du 21 février au 1er mars 2015. Et aussi sur <a href='http://www.lulechampdespossibles.fr' target=\"_blank\">www.lulechampdespossibles.fr</a></smal>
+";
+
+
+$art3 = "«Avec la filière LU’Harmony, j’ai pu visiter l’usine où est fabriqué le Véritable Petit Beurre et découvrir le devenir concret de mon blé. Une belle fierté!»
+<strong>Bruno Eon</strong>
+Agriculteur en Pays de Loire.
+
+« Je suis heureuse de contribuer à faire revenir les abeilles et les papillons sur mon territoire.»
+<strong>Elisabeth Bouchet</strong>
+Agricultrice dans la Vienne.
+
+
+Vous voulez en savoir plus sur LU’Harmony ? Rendez-vous sur le stand LU au Salon International de l’Agriculture, du 21 février au 1er mars 2015. Et aussi sur <a href='http://www.lulechampdespossibles.fr' target=\"_blank\">www.lulechampdespossibles.fr</a>
+";
 
 $articles_content = array('title' => 'Les conseils et astuces de la semaine',
     'slug' => 'articles',
@@ -114,13 +138,7 @@ $articles_content = array('title' => 'Les conseils et astuces de la semaine',
             'id' => 2,
             'title' => "4 engagements autour de la culture du blé",
             'chapeau' => "",
-            'article' => "1. Plus de 1 700 agriculteurs partenaires en France sélectionnés le plus près possible des sites de fabrication des biscuits LU.\n
-
-2. 49 pratiques agricoles dans la charte LU’Harmony : parmi elles, la sélection des parcelles en fonction de la variété de blé, du précédent cultural et du travail du sol ou encore des pratiques spécifiques pour la biodiversité locale.\r\n
-
-3. Des actions pour la biodiversité locale avec l’implantation à proximité des champs de blé LU’Harmony, d’espaces fleuris qui offrent aux insectes pollinisateurs le pollen et le nectar dont ils ont besoin pour se nourrir.\r\n
-
-4. un suivi du grain de blé au biscuit : une traçabilité bénéfique au consommateur qui connaît ainsi l’origine du blé utilisé dans les biscuits comme à l’agriculteur qui peut désormais connaître la destination finale de son blé.",
+            'article' => $art2,
             "visuel" => array("2_1.jpg"),
             'video' => "",
             "date" => $semaine_1,
@@ -130,7 +148,7 @@ $articles_content = array('title' => 'Les conseils et astuces de la semaine',
             'id' => 3,
             'title' => "Pratiques agricoles LU’Harmony : bilan et témoignages",
             'chapeau' => "",
-            'article' => "S’il est important de renouveler sa literie plusieurs fois dans une vie pour bien dormir, cela est également vrai pour la couette et les oreillers. Eux aussi perdent progressivement leurs qualités en s’affaissant ou en perdant de la chaleur. Quand vient le moment de renouveler son lit, autant donc faire d’une pierre deux coups pour être sûr de savourer le meilleur des sommeils. ",
+            'article' => $art3,
             "visuel" => array("3_1.jpg"),
             'video' => "",
             "date" => $semaine_1,

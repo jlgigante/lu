@@ -6,26 +6,26 @@ include("content.php");
 $rubrique = $_GET['rubrique'];
 $id_article = $_GET['id'] ? $_GET['id'] : null;
 
-
-var_dump($id_article);
 $now = new DateTime();
 
 if(!array_key_exists($rubrique, $menu)){	
 	Utils::get404($smarty);
 } 
 
-switch ($rubrique) {
-	case "videos":
-		$articles = $videos_content;
-		$plusArticles = $videos_content;
-        $autresArticles = $articles_content;
-		break;
-	case "articles":
-        $articles = $articles_content;
-        $plusArticles = $articles_content;
-        $autresArticles = $videos_content;
 
-		break;
+
+
+function slugIt ($array){
+    foreach($array['content'] as $k=>$v) {
+        //echo $v['title'];
+        $v['slug'] = Utils::format_url(strip_tags($v['title']));
+
+        //var_dump( $v['slug'] );
+        $cleaned_list['content'][]= $v;
+
+    }
+    //var_dump($cleaned_list);
+    return $cleaned_list;
 }
 
 
@@ -33,14 +33,13 @@ switch ($rubrique) {
 function prepareArray ($array, $currentId, $rubrique) {
     $cleaned_list = array();
     $now = new DateTime();
-    $slug = $array['slug'];
+
 
     foreach($array['content'] as $k=>$v){
 
         $v['slug'] = Utils::format_url(strip_tags($v['title']));
 
-
-        if($v['id'] != $currentId && $rubrique != $slug){
+        if($v['id'] != $currentId){
             if(($pos = strpos($v['title'], ':') ) == true){
                 $v['title'] = strstr($v['title'], ':', true);
             }
@@ -56,22 +55,32 @@ function prepareArray ($array, $currentId, $rubrique) {
             $array = $cleaned_list;
         }
     }
-    var_dump($array);
     return $array;
 
 }
 
-//var_dump(prepareArray($autresArticles, $id_article, $rubrique));
 
-$smarty->assign('aside_articles', prepareArray($plusArticles, $id_article, $rubrique));
-$smarty->assign('aside_videos', prepareArray($autresArticles, $id_article, $rubrique));
+switch ($rubrique) {
+    case "videos":
+        $article = $videos_content['content'][$_GET['id']];
+        $videos = prepareArray($videos_content, $id_article, $rubrique);
+        $articles = slugIt($articles_content);
+        break;
+    case "articles":
+
+        $article = $articles_content['content'][$_GET['id']];
+
+        $articles = prepareArray($articles_content, $id_article, $rubrique);
+        $videos = slugIt($videos_content);
+
+
+        break;
+}
 
 
 
-//var_dump($articles);
-//$smarty->assign('cleaned_list', array_slice($cleaned_list['content'], 0, 2));
-$article = $articles['content'][$_GET['id']];
-//$smarty->assign('articles', $articles);
+$smarty->assign('aside_articles', $articles);
+$smarty->assign('aside_videos', $videos);
 $smarty->assign('article', $article);
 $smarty->assign('rubrique', $rubrique);
 $smarty->display('article.tpl');
