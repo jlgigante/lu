@@ -11,18 +11,10 @@
     <meta name="description" content="{$smarty.const.SITE_DESCRIPTION}">
     <!--         <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     {**}
-    <meta property="og:title" content="{if isset($article)}{$article.content.titre|strip_tags}{else}{$smarty.const.SITE_NAME}{/if}"/>
-    <meta property="og:type" content="{if isset($content)}article{else}website{/if}"/>
-    <meta property="og:url" content="{$smarty.const.CURRENT_URL}"/>
-    <meta property="og:image" content="{if isset($content)}{$smarty.const.BASE_URL}/images/{$content.articles.0.visuel}{else}{$smarty.const.BASE_URL}/images/bg-code.jpg{/if}"/>
-    <meta property="og:site_name" content="{$smarty.const.SITE_NAME}"/>
-    <meta property="og:description" content="{if isset($content)}{$content.articles.0.article}{else}{$smarty.const.SITE_DESCRIPTION}{/if}"/>
     <!-- Bootstrap -->
     <link href="{$smarty.const.BASE_URL|escape}/css/bootstrap.css" rel="stylesheet" media="screen">
     <link href="{$smarty.const.BASE_URL|escape}/css/style.css" rel="stylesheet" media="screen">
-    <link href="http://referentiel.nouvelobs.com/favicon/tempsreel/favicon.ico" rel="shortcut icon">
-    <link href="http://referentiel.nouvelobs.com/favicon/tempsreel/favicon.gif" type="image/gif" rel="icon">
-    <link rel="stylesheet" type="text/css" href="http://referentiel.nouvelobs.com/css/obsess;manifest.css?t=1374676806"  media="screen">
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="http://getbootstrap.com/docs-assets/js/html5shiv.js"></script>
@@ -55,7 +47,7 @@
 
     <div class="row">
         <div class="col-md-12">
-            PUBLI-COMMUNIQUÉ
+            <a href="{$smarty.const.BASE_URL|escape}/accueil"> PUBLI-COMMUNIQUÉ</a>
         </div>
     </div>
 

@@ -52,7 +52,7 @@
 
     <div class="row">
         <div class="col-md-12">
-            PUBLI-COMMUNIQUÉ
+            <a href="{$smarty.const.BASE_URL|escape}/accueil"> PUBLI-COMMUNIQUÉ</a>
         </div>
     </div>
 
