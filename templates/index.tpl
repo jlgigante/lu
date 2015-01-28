@@ -32,5 +32,5 @@
 {/block}
 
 {block name="aside-videos"}
-    {include file="_aside.tpl"}
+    {include file="_aside_videos.tpl"}
 {/block}

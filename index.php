@@ -14,7 +14,7 @@ $now = new DateTime();
 
 $articlesEdito = Utils::contentManager($articles_content, $now, 0, 4);
 $articlesVideos = Utils::contentManager($videos_content, $now, 0, 4);
-
-$smarty->assign('aside', $articlesVideos);
+var_dump($articlesVideos);
+$smarty->assign('aside_videos', $articlesVideos);
 $smarty->assign('article', $articlesEdito);
 $smarty->display('index.tpl');

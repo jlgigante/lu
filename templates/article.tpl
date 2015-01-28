@@ -8,9 +8,18 @@
 		<article class="bd transparent">
 		
 			<div class="row">
+                <h2>{$article.title}</h2>
+
+
 
                 {if !empty($article.video) && isset($article.video) && $rubrique == 'videos'}
                     <iframe width="618" height="464" src="//www.youtube.com/embed/{$article.video}?rel=0&amp;autoplay=1" frameborder="0" allowfullscreen></iframe>
+                {/if}
+
+                {if isset($article.chapeau) && $article.chapeau != ''}
+                    <p class="chapeau">
+                        {$article.chapeau|nl2br}
+                    </p>
                 {/if}
 
                 {if !empty($article.visuel.0) && isset($article.visuel.0) && $rubrique != 'videos'}
@@ -18,17 +27,9 @@
 						<img src="{$smarty.const.BASE_URL}/images/art_{$rubrique}_{$article.visuel.0}" alt="{$article.title|strip_tags}" class="visuel">
 					</div>
 				{/if}
-			
-				{if $rubrique != 'conseils-et-astuces'} 
-					<h2>{$article.title}</h2>
-				{/if}
-				
-				{if isset($article.chapeau) && $article.chapeau != ''}
-					<p class="chapeau">
-						{$article.chapeau|nl2br}
-					</p>		
-				{/if}
-							
+
+
+
 				{if isset($article.article) && $article.article != ''}	
 					<div class="{if $rubrique == 'conseils-et-astuces'} col-xs-8{/if}">
 						<p class="article " >
