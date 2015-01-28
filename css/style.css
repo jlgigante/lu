@@ -674,6 +674,9 @@ section .bg-h1 {
 }
 /***********/
 /*Conseils*/
+#aside li {
+  padding: 5px 0 5px;
+}
 #aside li a {
   color: #000000;
 }

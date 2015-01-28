@@ -24,7 +24,7 @@ define('COUNTRY_CODE',  $param['lang'] ) ;
 if( $_SERVER["SERVER_NAME"] == 'projets.troisw-agenceweb.com' ) {
 	
 
-	$baseUrl = "http://biendormir.nouvelobs.com";
+	$baseUrl = "http://projets.troisw-agenceweb.com/lu/harmony";
 	$currentUrl = $baseUrl.$_SERVER["REQUEST_URI"];
 /* 	http://projets.troisw-agenceweb.com/lilpourlautre/site/ */
 	$_SERVER['DOCUMENT_ROOT'] = $_SERVER['DOCUMENT_ROOT'];
