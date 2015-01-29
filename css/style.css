@@ -178,7 +178,7 @@ div.header h3 {
   font-weight: bold;
 }
 .blog-sidebar p {
-  font-size: 13px;
+  font-size: 15px;
 }
 /* Demonstrate the grids */
 /*
@@ -698,6 +698,15 @@ section article h2 {
 }
 section article .chapeau {
   font-weight: bold;
+}
+section article p a {
+  text-decoration: underline;
+}
+section article p a:hover {
+  text-decoration: none;
+}
+section article p small {
+  font-size: 12px;
 }
 section .col-md-16 {
   padding: 0px;

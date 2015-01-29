@@ -21,7 +21,8 @@
 @magenta: #FF17B6;
 @black: #000000;
 @white: #FFF;
-@gris: #000;//#999999;
+@gris: #000;
+//#999999;
 @rose: #e63f52;
 
 @waring : #a20000;
@@ -105,28 +106,28 @@ body {
     font-size: 12px;
 }
 
-strong{
-  font-weight: bold;
+strong {
+    font-weight: bold;
 }
 
-i{
+i {
     font-style: italic;
 }
 
 div.header h3 {
-  font-weight: 400;
-  font-style: normal;
-  font-size: 13px;
-  color: #000000;
-  text-align: center;
-  line-height: normal;
-  border: 1px solid rgb(153,153,153);
-  padding: 5px;
-  margin-top: 0px;
-  position: relative;
-  left: 0px;
-  width: 200px;
-  background: white;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    color: #000000;
+    text-align: center;
+    line-height: normal;
+    border: 1px solid rgb(153, 153, 153);
+    padding: 5px;
+    margin-top: 0px;
+    position: relative;
+    left: 0px;
+    width: 200px;
+    background: white;
 }
 
 /* Finesse the page header spacing */
@@ -154,7 +155,7 @@ div.header h3 {
 }
 
 .row {
-  margin-top: 20px;
+    margin-top: 20px;
     margin-left: 0px;
     margin-right: 0px;
 }
@@ -168,7 +169,7 @@ div.header h3 {
 
 .blog-sidebar {
 
-    &-social{
+    &-social {
         text-align: center;
     }
 
@@ -182,7 +183,7 @@ div.header h3 {
         font-weight: bold;
     }
     p {
-        font-size: 13px;
+        font-size: 15px;
     }
 
 }
@@ -304,7 +305,7 @@ body {
 }
 
 h1, h2, h3, h4, .title {
- //   text-transform: uppercase;
+    //   text-transform: uppercase;
 }
 
 h1 {
@@ -319,13 +320,13 @@ h2 {
     a {
         color: @black;
     }
-  margin: 10px 0;
+    margin: 10px 0;
 }
 
 p {
     font-size: 15px;
     text-align: justify;
-  margin: 10px 0 20px;
+    margin: 10px 0 20px;
 }
 
 a, a:hover {
@@ -367,27 +368,26 @@ a:hover {
 /*HEADER*/
 .header {
 
-  padding: 0;
+    padding: 0;
 
     background: url(http://mes-meilleures-adresses.troisw-agenceweb.com/wp-content/themes/wordpress-bootstrap-master/images/bg_h1.png) 0 -6px;
 
-   h3:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 0;
+    h3:before {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
 
-       border-bottom: 12px solid #727272;
-       border-right: 13px solid transparent;
-       position: absolute;
-       top: -1px;
-       right: -14px;
-  }
+        border-bottom: 12px solid #727272;
+        border-right: 13px solid transparent;
+        position: absolute;
+        top: -1px;
+        right: -14px;
+    }
 
-
-  .col-md-12{
-    padding: 0;
-  }
+    .col-md-12 {
+        padding: 0;
+    }
 
     h1 {
         font-size: 24px;
@@ -590,35 +590,32 @@ a:hover {
 .bloc-videos {
     border: 1px solid @gris;
     .aside-videos {
-      border: none;
+        border: none;
 
-
-
-      li:first-child{
-        margin-top: 20px;
-      }
-      .row{
-        padding: 0;
-        margin: 0;
-      }
+        li:first-child {
+            margin-top: 20px;
+        }
+        .row {
+            padding: 0;
+            margin: 0;
+        }
     }
 }
 
-.bloc-artcile{
-//    outline-style: solid;
-//    outline-width: 1px;
-//    outline-offset: 0px;
+.bloc-artcile {
+    //    outline-style: solid;
+    //    outline-width: 1px;
+    //    outline-offset: 0px;
 
-
-    &:first-child{
+    &:first-child {
         padding-left: 0;
     }
 
-    article{
+    article {
         border: 1px solid @black;
         padding: 10px;
         min-height: 340px;
-        .voir-article{
+        .voir-article {
             right: 20px;
             bottom: 5px;
         }
@@ -754,8 +751,7 @@ ul.pagination {
     }
 }
 
-
-.row-article{
+.row-article {
     margin-top: 5px;
 }
 
@@ -765,18 +761,32 @@ section {
     overflow: hidden;
 
     article {
-//        margin-bottom: 20px;
-//        padding-bottom: 20px;
+        //        margin-bottom: 20px;
+        //        padding-bottom: 20px;
+
         h2 {
             //color: @rose;
-          margin: 20px 0px;
+            margin: 20px 0px;
         }
         .visuel {
-//            margin-bottom: 20px;
+            //            margin-bottom: 20px;
         }
-    .chapeau{
-        font-weight: bold;
-    }
+        .chapeau {
+            font-weight: bold;
+        }
+
+        p{
+            a{
+                text-decoration: underline;
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+
+            small{
+                font-size: 12px;
+            }
+        }
 
     }
 
@@ -821,10 +831,6 @@ section {
     //		}
     //	}
 
-
-
-
-
     ul {
         //		padding: 10px;
     }
@@ -841,50 +847,49 @@ section {
         }
     }
     li:last-child {
-//        border: none;
+        //        border: none;
     }
 }
 
-.aside{
-  &-videos{
-    border: 1px solid @gris;
+.aside {
+    &-videos {
+        border: 1px solid @gris;
 
-      .vignette{
-          height: 61px;
-          position: relative;
-          overflow: hidden;
-          display: inline-block;
-          &>img{
-              position: relative;
-              top: -10px;
-          }
+        .vignette {
+            height: 61px;
+            position: relative;
+            overflow: hidden;
+            display: inline-block;
+            & > img {
+                position: relative;
+                top: -10px;
+            }
 
-      }
+        }
 
-      .row {
-          padding: 0;
-          margin: 0;
-      }
-
-  }
-
-  &-articles{
-
-      .row{
-          padding: 0;
-          margin: 0;
-      }
-
-    li{
-      border: 1px solid @gris;
-      margin-bottom: 10px;
-      padding: O O 5px;
+        .row {
+            padding: 0;
+            margin: 0;
+        }
 
     }
-  }
+
+    &-articles {
+
+        .row {
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            border: 1px solid @gris;
+            margin-bottom: 10px;
+            padding: O O 5px;
+
+        }
+    }
 
 }
-
 
 .pub, .fb {
     width: 100%;
@@ -898,19 +903,19 @@ section {
     background: white;
 }
 
-.voir-article{
-  text-align: right;
-  font-size: 0.750em;
+.voir-article {
+    text-align: right;
+    font-size: 0.750em;
     position: absolute;
     bottom: 0px;
     right: 10px;
 
-  a{
-    text-decoration: underline;
-    &:hover{
-      text-decoration: none;
+    a {
+        text-decoration: underline;
+        &:hover {
+            text-decoration: none;
+        }
     }
-  }
 
 }
 

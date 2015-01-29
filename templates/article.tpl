@@ -10,7 +10,30 @@
             <h2>{$article.title}</h2>
 
 
-            {if $article.id != '3'}
+
+
+            {if $article.id == '3' && $rubrique == 'articles'}
+                <div class="col-md-6">
+                    <img src="{$smarty.const.BASE_URL}/images/art_{$rubrique}_{$article.visuel.1}"
+                         alt="{$article.title|strip_tags}" class="visuel">
+
+                    <p>{$article.temoignages.1|nl2br}</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="{$smarty.const.BASE_URL}/images/art_{$rubrique}_{$article.visuel.2}"
+                         alt="{$article.title|strip_tags}" class="visuel">
+
+                    <p>{$article.temoignages.2|nl2br}</p>
+                </div>
+
+            <div class="col-md-12">
+                <img src="{$smarty.const.BASE_URL}/images/art_{$rubrique}_{$article.visuel.3}"
+                     alt="{$article.title|strip_tags}" class="visuel">
+
+                <p>{$article.temoignages.0|nl2br}</p>
+            </div>
+            {else}
+
                 {if !empty($article.video) && isset($article.video) && $rubrique == 'videos'}
                     <iframe width="618" height="464" src="//www.youtube.com/embed/{$article.video}?rel=0&amp;autoplay=0"
                             frameborder="0" allowfullscreen></iframe>
@@ -44,28 +67,6 @@
                     </div>
                 {/if}
 
-            {/if}
-
-            {if $article.id == '3' && $rubrique == 'articles'}
-                <div class="col-md-6">
-                    <img src="{$smarty.const.BASE_URL}/images/art_{$rubrique}_{$article.visuel.1}"
-                         alt="{$article.title|strip_tags}" class="visuel">
-
-                    <p>{$article.temoignages.1|nl2br}</p>
-                </div>
-                <div class="col-md-6">
-                    <img src="{$smarty.const.BASE_URL}/images/art_{$rubrique}_{$article.visuel.2}"
-                         alt="{$article.title|strip_tags}" class="visuel">
-
-                    <p>{$article.temoignages.2|nl2br}</p>
-                </div>
-
-            <div class="col-md-12">
-                <img src="{$smarty.const.BASE_URL}/images/art_{$rubrique}_{$article.visuel.3}"
-                     alt="{$article.title|strip_tags}" class="visuel">
-
-                <p>{$article.temoignages.0|nl2br}</p>
-            </div>
             {/if}
 
         </article>

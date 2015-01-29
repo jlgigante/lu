@@ -92,7 +92,7 @@ Pourquoi ? Parce que 70 % des fruits et légumes (1) que nous man-geons dépende
 Vous voulez en savoir plus sur LU’Harmony ? Rendez-vous sur le stand LU au Salon International de l’Agriculture, du 21 février au 1er mars 2015. Et aussi sur <a href='http://www.lulechampdespossibles.fr' target=\"_blank\">www.lulechampdespossibles.fr</a>
 
 
-<small>(1) La FAO (l’Organisation de l’Alimentation et de l’Agriculture de l’ONU) estime que sur les 100 cultures qui produisent 90 % de l’alimentation mondiale, 71 dé- pendent de la pollinisation des abeilles.</small>
+<small>(1) La FAO (l’Organisation de l’Alimentation et de l’Agriculture de l’ONU) estime que sur les 100 cultures qui produisent 90 % de l’alimentation mondiale, 71 dépendent de la pollinisation des abeilles.</small>
  ";
 
 
@@ -132,7 +132,7 @@ $articles_content = array('title' => 'Les conseils et astuces de la semaine',
         1 => array(
             'id' => 1,
             'title' => "Culture du blé : toute une filière se mobilise",
-            'chapeau' => "Le Salon International de l’Agriculture est l’occasion de faire le point sur le programme LU’Harmony lancé par le groupe Mondelēz International et sa marque LU en 2008. Depuis 7 ans, le fabricant de biscuits fédère toute la filière blé autour de pratiques agricoles plus respectueuses de l’environnement, de la biodiversité locale, et au service de la qualité des biscuits. Bilan sur ces engagements longue portée.",
+            'chapeau' => "Quand on sait que le blé est l’ingrédient principal de ses biscuits, on comprend pourquoi LU s’est entouré d’hommes et de femmes engagés, pour mettre en place la filière LU’Harmony.",
             'article' => $art1,
             "visuel" => array("1_1.jpg"),
             "video" => "",
