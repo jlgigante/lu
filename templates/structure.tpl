@@ -6,14 +6,14 @@
         <div class="col-md-12">
 
             <div class="header">
-                <h3><a href="{$smarty.const.BASE_URL|escape}/accueil"> PUBLI-COMMUNIQUÉ</a></h3>
+                <h3>PUBLI-COMMUNIQUÉ</h3>
             </div>
         </div>
     </div>
 
     <div class="row">
         <div class="col-md-12">
-        <h1>Charte LU'Harmony</h1>
+            <a href="{$smarty.const.BASE_URL|escape}/accueil">        <h1>Charte LU'Harmony</h1></a>
             </div>
     </div>
 

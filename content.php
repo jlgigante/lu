@@ -112,14 +112,16 @@ $art2 = "<strong>1.  Plus de 1 700 agriculteurs partenaires</strong> en France s
 $art3_1 = "Vous voulez en savoir plus sur LU’Harmony ? Rendez-vous sur le stand LU au Salon International de l’Agriculture, du 21 février au 1er mars 2015. Et aussi sur <a href='http://www.lulechampdespossibles.fr' target=\"_blank\">www.lulechampdespossibles.fr</a>";
 
 
-$art3_2 = "«Avec la filière LU’Harmony, j’ai pu visiter l’usine où est fabriqué le Véritable Petit Beurre et découvrir le devenir concret de mon blé. Une belle fierté!»
+$art3_2 = "<i>«Avec la filière LU’Harmony, j’ai pu visiter l’usine où est fabriqué le Véritable Petit Beurre et découvrir le devenir concret de mon blé. Une belle fierté!»</i>
+
 <strong>Bruno Eon</strong>
 Agriculteur en Pays de Loire.";
 
 
 
 
-$art3_3 = "« Je suis heureuse de contribuer à faire revenir les abeilles et les papillons sur mon territoire.»
+$art3_3 = "<i>«Je suis heureuse de contribuer à faire revenir les abeilles et les papillons sur mon territoire.»</i>
+
 <strong>Elisabeth Bouchet</strong>
 Agricultrice dans la Vienne.";
 
