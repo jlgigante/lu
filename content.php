@@ -122,6 +122,7 @@ Agriculteur en Pays de Loire.";
 
 $art3_3 = "<i>«Je suis heureuse de contribuer à faire revenir les abeilles et les papillons sur mon territoire.»</i>
 
+
 <strong>Elisabeth Bouchet</strong>
 Agricultrice dans la Vienne.";
 
