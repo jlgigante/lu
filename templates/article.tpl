@@ -11,7 +11,7 @@
                 <h2>{$article.title}</h2>
 
 
-
+            {if $article.id != '3'}
                 {if !empty($article.video) && isset($article.video) && $rubrique == 'videos'}
                     <iframe width="618" height="464" src="//www.youtube.com/embed/{$article.video}?rel=0&amp;autoplay=0" frameborder="0" allowfullscreen></iframe>
                 {/if}
@@ -28,8 +28,6 @@
 					</div>
 				{/if}
 
-
-
 				{if isset($article.article) && $article.article != ''}	
 					<div class="{if $rubrique == 'conseils-et-astuces'} col-xs-8{/if}">
 						<p class="article " >
@@ -42,8 +40,22 @@
 					<div class="visuel">
 						<img src="{$smarty.const.BASE_URL}/img/art_{$rubrique}_670x250_{$article.visuel.1}" alt="{$article.title|strip_tags}">
 					</div>
-				{/if}		
+				{/if}
 
+            {/if}
+
+            {if $article.id == '3'}
+
+            <div class="col-md-6">
+                <img src="{$smarty.const.BASE_URL}/images/art_{$rubrique}_{$article.visuel.1}" alt="{$article.title|strip_tags}" class="visuel">
+                <p>content</p>
+            </div>
+
+            <div class="col-md-6">
+                <img src="{$smarty.const.BASE_URL}/images/art_{$rubrique}_{$article.visuel.2}" alt="{$article.title|strip_tags}" class="visuel">
+                <p>content</p>
+            </div>
+            {/if}
 
 		</article>	
 	</section>

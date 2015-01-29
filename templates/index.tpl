@@ -26,7 +26,7 @@
                  alt="{$article.content.1.title|strip_tags}" class="img-responsive"/>
         </a>
 
-        <p>{$article.content.1.article|truncate:'400'|nl2br}</p>
+        <p>{$article.content.1.chapeau}</p>
 
 
         <div class="voir-article">
@@ -47,7 +47,7 @@
                  alt="{$article.content.0.title|strip_tags}" class="img-responsive"/>
         </a>
 
-        <p>{$article.content.0.article|truncate:'400'|nl2br}</p>
+        <p>{$article.content.0.chapeau}</p>
 
 
         <div class="voir-article">
