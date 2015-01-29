@@ -21,7 +21,7 @@
 @magenta: #FF17B6;
 @black: #000000;
 @white: #FFF;
-@gris: #818181;
+@gris: #000;//#999999;
 @rose: #e63f52;
 
 @waring : #a20000;
@@ -110,7 +110,7 @@ strong{
 }
 
 
-div.header h1 {
+div.header h3 {
   font-weight: 400;
   font-style: normal;
   font-size: 13px;
@@ -305,10 +305,13 @@ h1, h2, h3, h4, .title {
 }
 
 h1 {
-    font-size: 1.125em;
+    font-size: 1.25em;
+    color: @black;
+    font-weight: bold;
 }
 
 h2 {
+    font-weight: bold;
     font-size: 1.2em;
     a {
         color: @black;
@@ -319,7 +322,7 @@ h2 {
 p {
     font-size: 15px;
     text-align: justify;
-  margin: 10px 0;
+  margin: 10px 0 20px;
 }
 
 a, a:hover {
@@ -365,7 +368,7 @@ a:hover {
 
     background: url(http://mes-meilleures-adresses.troisw-agenceweb.com/wp-content/themes/wordpress-bootstrap-master/images/bg_h1.png);
 
-   h1:before {
+   h3:before {
     content: "";
     display: block;
     width: 0;
@@ -582,9 +585,11 @@ a:hover {
 }
 
 .bloc-videos {
-    border: 1px solid black;
+    border: 1px solid @gris;
     .aside-videos {
       border: none;
+
+
 
       li:first-child{
         margin-top: 20px;
@@ -597,7 +602,25 @@ a:hover {
 }
 
 .bloc-artcile{
-  //border: 1px solid black;
+//    outline-style: solid;
+//    outline-width: 1px;
+//    outline-offset: 0px;
+
+
+    &:first-child{
+        padding-left: 0;
+    }
+
+    article{
+        border: 1px solid @black;
+        padding: 10px;
+        min-height: 340px;
+        .voir-article{
+            right: 20px;
+            bottom: 5px;
+        }
+
+    }
 }
 
 .bd {
@@ -728,22 +751,29 @@ ul.pagination {
     }
 }
 
+
+.row-article{
+    margin-top: 5px;
+}
+
 /*SECTION*/
 section {
     margin-bottom: 30px !important;
     overflow: hidden;
 
     article {
-        margin-bottom: 20px;
-        padding-bottom: 20px;
-        border-bottom: 1px solid @rose;
+//        margin-bottom: 20px;
+//        padding-bottom: 20px;
         h2 {
             //color: @rose;
           margin: 20px 0px;
         }
         .visuel {
-            margin-bottom: 20px;
+//            margin-bottom: 20px;
         }
+    .chapeau{
+        font-weight: bold;
+    }
 
     }
 
@@ -814,15 +844,39 @@ section {
 
 .aside{
   &-videos{
-    border: 1px solid @black;
+    border: 1px solid @gris;
+
+      .vignette{
+          height: 61px;
+          position: relative;
+          overflow: hidden;
+          display: inline-block;
+          &>img{
+              position: relative;
+              top: -10px;
+          }
+
+      }
+
+      .row {
+          padding: 0;
+          margin: 0;
+      }
+
   }
 
   &-articles{
 
+      .row{
+          padding: 0;
+          margin: 0;
+      }
+
     li{
-      border: 1px solid @black;
+      border: 1px solid @gris;
       margin-bottom: 10px;
       padding: O O 5px;
+
     }
   }
 
@@ -844,6 +898,9 @@ section {
 .voir-article{
   text-align: right;
   font-size: 0.750em;
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
 
   a{
     text-decoration: underline;
@@ -1169,7 +1226,7 @@ section {
 #article {
 
     article {
-        border-bottom: 1px solid @black;
+        border-bottom: 1px solid @gris;
         margin-bottom: 30px;
         padding-bottom: 20px;
         .big-visuel {

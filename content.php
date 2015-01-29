@@ -109,17 +109,20 @@ $art2 = "<strong>1.  Plus de 1 700 agriculteurs partenaires</strong> en France s
 ";
 
 
-$art3 = "«Avec la filière LU’Harmony, j’ai pu visiter l’usine où est fabriqué le Véritable Petit Beurre et découvrir le devenir concret de mon blé. Une belle fierté!»
+$art3_1 = "Vous voulez en savoir plus sur LU’Harmony ? Rendez-vous sur le stand LU au Salon International de l’Agriculture, du 21 février au 1er mars 2015. Et aussi sur <a href='http://www.lulechampdespossibles.fr' target=\"_blank\">www.lulechampdespossibles.fr</a>";
+
+
+$art3_2 = "«Avec la filière LU’Harmony, j’ai pu visiter l’usine où est fabriqué le Véritable Petit Beurre et découvrir le devenir concret de mon blé. Une belle fierté!»
 <strong>Bruno Eon</strong>
-Agriculteur en Pays de Loire.
+Agriculteur en Pays de Loire.";
 
-« Je suis heureuse de contribuer à faire revenir les abeilles et les papillons sur mon territoire.»
+
+
+
+$art3_3 = "« Je suis heureuse de contribuer à faire revenir les abeilles et les papillons sur mon territoire.»
 <strong>Elisabeth Bouchet</strong>
-Agricultrice dans la Vienne.
+Agricultrice dans la Vienne.";
 
-
-Vous voulez en savoir plus sur LU’Harmony ? Rendez-vous sur le stand LU au Salon International de l’Agriculture, du 21 février au 1er mars 2015. Et aussi sur <a href='http://www.lulechampdespossibles.fr' target=\"_blank\">www.lulechampdespossibles.fr</a>
-";
 
 $articles_content = array('title' => 'Les conseils et astuces de la semaine',
     'slug' => 'articles',
@@ -148,8 +151,9 @@ $articles_content = array('title' => 'Les conseils et astuces de la semaine',
             'id' => 3,
             'title' => "Pratiques agricoles LU’Harmony : bilan et témoignages",
             'chapeau' => "Découvrez le témoignage d’agriculteurs ainsi que les résultats terrain de la filière LU’Harmony",
-            'article' => $art3,
-            "visuel" => array("3_1.jpg", "3_2.jpg","3_3.jpg"),
+            'article' => $art3_1,
+            'temoignages' => array($art3_1,$art3_2,$art3_3, ),
+            "visuel" => array("3_1.jpg", "3_2.jpg","3_3.jpg","3_4.jpg"),
             'video' => "",
             "date" => $semaine_1,
         )

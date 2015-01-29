@@ -114,7 +114,7 @@ body {
 strong {
   font-weight: bold;
 }
-div.header h1 {
+div.header h3 {
   font-weight: 400;
   font-style: normal;
   font-size: 13px;
@@ -274,9 +274,12 @@ body {
   line-height: 1.2em;
 }
 h1 {
-  font-size: 1.125em;
+  font-size: 1.25em;
+  color: #000000;
+  font-weight: bold;
 }
 h2 {
+  font-weight: bold;
   font-size: 1.2em;
   margin: 10px 0;
 }
@@ -286,7 +289,7 @@ h2 a {
 p {
   font-size: 15px;
   text-align: justify;
-  margin: 10px 0;
+  margin: 10px 0 20px;
 }
 a,
 a:hover {
@@ -323,7 +326,7 @@ a:hover {
   padding: 0;
   background: url(http://mes-meilleures-adresses.troisw-agenceweb.com/wp-content/themes/wordpress-bootstrap-master/images/bg_h1.png);
 }
-.header h1:before {
+.header h3:before {
   content: "";
   display: block;
   width: 0;
@@ -544,7 +547,7 @@ a:hover {
   display: none;
 }
 .bloc-videos {
-  border: 1px solid black;
+  border: 1px solid #000000;
 }
 .bloc-videos .aside-videos {
   border: none;
@@ -555,6 +558,18 @@ a:hover {
 .bloc-videos .aside-videos .row {
   padding: 0;
   margin: 0;
+}
+.bloc-artcile:first-child {
+  padding-left: 0;
+}
+.bloc-artcile article {
+  border: 1px solid #000000;
+  padding: 10px;
+  min-height: 340px;
+}
+.bloc-artcile article .voir-article {
+  right: 20px;
+  bottom: 5px;
 }
 .bd.white {
   border-color: #ffffff;
@@ -668,21 +683,19 @@ ul.pagination li:last-child a {
   padding: 0 15px;
   top: 0;
 }
+.row-article {
+  margin-top: 5px;
+}
 /*SECTION*/
 section {
   margin-bottom: 30px !important;
   overflow: hidden;
 }
-section article {
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #e63f52;
-}
 section article h2 {
   margin: 20px 0px;
 }
-section article .visuel {
-  margin-bottom: 20px;
+section article .chapeau {
+  font-weight: bold;
 }
 section .col-md-16 {
   padding: 0px;
@@ -715,6 +728,24 @@ section .bg-h1 {
 .aside-videos {
   border: 1px solid #000000;
 }
+.aside-videos .vignette {
+  height: 61px;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+.aside-videos .vignette > img {
+  position: relative;
+  top: -10px;
+}
+.aside-videos .row {
+  padding: 0;
+  margin: 0;
+}
+.aside-articles .row {
+  padding: 0;
+  margin: 0;
+}
 .aside-articles li {
   border: 1px solid #000000;
   margin-bottom: 10px;
@@ -733,6 +764,9 @@ section .bg-h1 {
 .voir-article {
   text-align: right;
   font-size: 0.750em;
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
 }
 .voir-article a {
   text-decoration: underline;

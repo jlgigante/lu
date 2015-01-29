@@ -9,8 +9,7 @@
 	{*<h1>{$articles.title}</h1>*}									
 		{foreach from=$articles.content key=myId item=i}
 			<article>
-				<div class="row">				
-				
+
 
 					<div class="col-xs-6 visuel">
 						<a href="{$smarty.const.BASE_URL}/{$rubrique|escape}/{$i.id}/{$i.slug|escape}">
@@ -26,8 +25,7 @@
 						</p>					
 					</div>				
 					<a href="{$smarty.const.BASE_URL}/{$rubrique|escape}/{$i.id}/{$i.slug|escape}" class="suite">Lire la suite...</a>					
-				</div>
-			</article>	
+			</article>
 		{/foreach}
 	{/if}
 	</section>

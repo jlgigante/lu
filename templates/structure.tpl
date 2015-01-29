@@ -6,11 +6,16 @@
         <div class="col-md-12">
 
             <div class="header">
-                <h1><a href="{$smarty.const.BASE_URL|escape}/accueil"> PUBLI-COMMUNIQUÉ</a></h1>
+                <h3><a href="{$smarty.const.BASE_URL|escape}/accueil"> PUBLI-COMMUNIQUÉ</a></h3>
             </div>
         </div>
     </div>
 
+    <div class="row">
+        <div class="col-md-12">
+        <h1>Charte LU'Harmony</h1>
+            </div>
+    </div>
 
     <div class="row bloc-videos">
         <div class="col-md-8">
