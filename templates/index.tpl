@@ -2,7 +2,7 @@
 {block name="content"}
     <article class="bd transparent">
         <a href="{$smarty.const.BASE_URL|escape}/{$article.slug}/{$article.content.2.id}/{$article.content.2.slug}">
-            <h4>{$article.content.2.title}</h4>
+            <h2>{$article.content.2.title}</h2>
             <img src="{$smarty.const.BASE_URL}/images/art_articles_{$article.content.2.visuel.0}"
                  alt="{$article.content.2.title|strip_tags}" class="img-responsive"/>
         </a>
@@ -21,12 +21,12 @@
 {block name="article-2"}
     <article class="bd transparent">
         <a href="{$smarty.const.BASE_URL|escape}/{$article.slug}/{$article.content.1.id}/{$article.content.1.slug}">
-            <h4>{$article.content.1.title}</h4>
+            <h2>{$article.content.1.title}</h2>
             <img src="{$smarty.const.BASE_URL}/images/art_articles_{$article.content.1.visuel.0}"
                  alt="{$article.content.1.title|strip_tags}" class="img-responsive"/>
         </a>
 
-        <p>{$article.content.1.article|truncate:'400'}</p>
+        <p>{$article.content.1.article|truncate:'400'|nl2br}</p>
 
 
         <div class="voir-article">
@@ -42,12 +42,12 @@
 {block name="article-3"}
     <article class="bd transparent">
         <a href="{$smarty.const.BASE_URL|escape}/{$article.slug}/{$article.content.0.id}/{$article.content.0.slug}">
-            <h4>{$article.content.0.title}</h4>
+            <h2>{$article.content.0.title}</h2>
             <img src="{$smarty.const.BASE_URL}/images/art_articles_{$article.content.0.visuel.0}"
                  alt="{$article.content.0.title|strip_tags}" class="img-responsive"/>
         </a>
 
-        <p>{$article.content.0.article|truncate:'400'}</p>
+        <p>{$article.content.0.article|truncate:'400'|nl2br}</p>
 
 
         <div class="voir-article">

@@ -3,11 +3,11 @@
 	{*{include file="_menu.tpl"}	*}
 {*{/block}*}
 {block name="content"}
-
+    <div class="row">
 	<section>
 		<article class="bd transparent">
 		
-			<div class="row">
+
                 <h2>{$article.title}</h2>
 
 
@@ -43,10 +43,11 @@
 						<img src="{$smarty.const.BASE_URL}/img/art_{$rubrique}_670x250_{$article.visuel.1}" alt="{$article.title|strip_tags}">
 					</div>
 				{/if}		
-			</div>
+
 
 		</article>	
 	</section>
+    </div>
 
 {/block}
 

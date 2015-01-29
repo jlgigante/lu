@@ -348,17 +348,17 @@ FileETag None
 
 
 #conf local
- #RewriteCond %{SERVER_NAME} ^lu.loc$
- RewriteCond %{SERVER_NAME} ^projets.troisw-agenceweb.com$
- DirectoryIndex /lu/harmony/index.php
+ RewriteCond %{SERVER_NAME} ^lu.loc$
+ #RewriteCond %{SERVER_NAME} ^projets.troisw-agenceweb.com$
+ DirectoryIndex /index.php
+ #RewriteBase /lu/harmony/
  RewriteBase /
  RewriteRule 404$ /404.html [QSA,L]
- RewriteRule accueil /lu/harmony/index.php [QSA,L]
- RewriteRule identification	/acces.php [QSA,L]
+ RewriteRule accueil /index.php [QSA,L]
 
- RewriteRule ^([a-z\-]+)/([0-9]{1,4})/([a-z,0-9\-]+)$ /lu/harmony/article.php?rubrique=$1&id=$2 [QSA]
- RewriteRule ^([a-z\-]+)$ /lu/harmony/articles.php?rubrique=$1&id=$2 [QSA]
- RewriteRule ^([a-z\-]+)/([0-9]{1,4})$ /lu/harmony/articles.php?rubrique=$1&page=$2 [QSA]
+ RewriteRule ^([a-z\-]+)/([0-9]{1,4})/([a-z,0-9\-]+)$ /article.php?rubrique=$1&id=$2 [QSA]
+ RewriteRule ^([a-z\-]+)$ /articles.php?rubrique=$1&id=$2 [QSA]
+ RewriteRule ^([a-z\-]+)/([0-9]{1,4})$ /articles.php?rubrique=$1&page=$2 [QSA]
 
 
 </IfModule>
