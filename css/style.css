@@ -569,6 +569,9 @@ a:hover {
 .bloc-artcile:first-child {
   padding-left: 0;
 }
+.bloc-artcile:nth-child(2) {
+  padding-right: 0;
+}
 .bloc-artcile article {
   border: 1px solid #000000;
   padding: 10px;
@@ -772,7 +775,7 @@ section .bg-h1 {
   width: 100%;
   padding: 5px;
   background: #e0e0e0;
-  margin: 10px 0px;
+  margin: 0 0 10px;
 }
 .fb-like-box {
   background: white;

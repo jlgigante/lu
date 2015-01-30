@@ -7,7 +7,7 @@
 
 
                         {if $rubrique == 'videos'}
-                            <div class="col-md-5">
+                            <div class="col-md-7">
                                 <a href="{$smarty.const.BASE_URL|escape}/{$rubrique}/{$i.id}/{$i.slug}">
                                     <span class="vignette">
                                     <img aria-hidden="true" alt="" src="//i.ytimg.com/vi_webp/{$i.video}/default.webp"
@@ -15,7 +15,7 @@
                                         </span>
                                 </a>
                             </div>
-                            <div class="col-md-7">
+                            <div class="col-md-5">
                                 <a href="{$smarty.const.BASE_URL|escape}/{$rubrique}/{$i.id}/{$i.slug}">
                                     <h4>{$i.title}</h4>
                                 </a>
