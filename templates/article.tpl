@@ -6,33 +6,34 @@
             <h2>{$article.title}</h2>
 
             {if $article.id == '3' && $rubrique == 'articles'}
-<div class="row">
+                <div class="row">
 
-                <h3>Témoignages</h3>
-                <div class="col-md-6">
-                    <img src="{$smarty.const.BASE_URL}/images/art_{$rubrique}_{$article.visuel.1}"
-                         alt="{$article.title|strip_tags}" class="visuel">
+                    <h3>Témoignages</h3>
 
-                    <p>{$article.temoignages.1|nl2br}</p>
+                    <div class="col-md-6">
+                        <img src="{$smarty.const.BASE_URL}/images/art_{$rubrique}_{$article.visuel.1}"
+                             alt="{$article.title|strip_tags}" class="visuel">
+
+                        <p>{$article.temoignages.1|nl2br}</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="{$smarty.const.BASE_URL}/images/art_{$rubrique}_{$article.visuel.2}"
+                             alt="{$article.title|strip_tags}" class="visuel">
+
+                        <p>{$article.temoignages.2|nl2br}</p>
+                    </div>
+
                 </div>
-                <div class="col-md-6">
-                    <img src="{$smarty.const.BASE_URL}/images/art_{$rubrique}_{$article.visuel.2}"
-                         alt="{$article.title|strip_tags}" class="visuel">
-
-                    <p>{$article.temoignages.2|nl2br}</p>
-                </div>
-
-</div>
-
                 <div class="row">
 
                     <h3>Infographie</h3>
-            <div class="col-md-12">
-                <img src="{$smarty.const.BASE_URL}/images/art_{$rubrique}_{$article.visuel.3}"
-                     alt="{$article.title|strip_tags}" class="visuel">
 
-                <p>{$article.temoignages.0|nl2br}</p>
-            </div>
+                    <div class="col-md-12">
+                        <img src="{$smarty.const.BASE_URL}/images/art_{$rubrique}_{$article.visuel.3}"
+                             alt="{$article.title|strip_tags}" class="visuel">
+
+                        <p>{$article.temoignages.0|nl2br}</p>
+                    </div>
                 </div>
             {else}
 
