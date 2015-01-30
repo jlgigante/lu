@@ -13,7 +13,7 @@
 
     <div class="row">
         <div class="col-md-12">
-            <a href="{$smarty.const.BASE_URL|escape}/accueil">        <h1>Charte LU'Harmony</h1></a>
+            <a href="{$smarty.const.BASE_URL|escape}/accueil"><h1>Charte LU'Harmony</h1></a>
         </div>
     </div>
 
@@ -23,7 +23,6 @@
                 Content
             {/block}
         </div>
-
         <div class="col-md-4 blog-sidebar">
             {block name="aside-videos"}
                 Content
@@ -34,7 +33,6 @@
             {block name="aside-articles"}
                 Content
             {/block}
-
         </div>
     </div>
 </div><!-- fin container main -->

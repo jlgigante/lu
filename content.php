@@ -153,7 +153,7 @@ $articles_content = array('title' => 'Les conseils et astuces de la semaine',
         3 => array(
             'id' => 3,
             'title' => "Pratiques agricoles LU’Harmony : bilan et témoignages",
-            'chapeau' => "Découvrez le témoignage d’agriculteurs ainsi que les résultats terrain de la filière LU’Harmony",
+            'chapeau' => "Découvrez le témoignage d’agriculteurs ainsi que les résultats terrain de la filière LU’Harmony.",
             'article' => $art3_1,
             'temoignages' => array($art3_1,$art3_2,$art3_3, ),
             "visuel" => array("3_1.jpg", "3_2.jpg","3_3.jpg","3_4.jpg"),

@@ -126,7 +126,7 @@ div.header h3 {
   line-height: normal;
   border: 1px solid #999999;
   padding: 5px;
-  margin-top: 0px;
+  margin: 10px 0;
   position: relative;
   left: 0px;
   width: 200px;
@@ -281,13 +281,18 @@ h1 {
   color: #000000;
   font-weight: bold;
 }
-h2 {
+h2,
+h3 {
   font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.1em;
   margin: 10px 0;
 }
-h2 a {
+h2 a,
+h3 a {
   color: #000000;
+}
+h3 {
+  font-size: 1em;
 }
 p {
   font-size: 15px;
