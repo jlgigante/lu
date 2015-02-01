@@ -7,16 +7,17 @@
 
 
                     {if $rubrique == 'videos'}
-                        <div class="col-md-7">
-                            <a href="{$smarty.const.BASE_URL|escape}/{$rubrique}/{$i.id}/{$i.slug}">
+                        <div class="col-md-6">
+                            <a href="{$smarty.const.BASE_URL|escape}/{$rubrique}/{$i.id}/{$i.slug}" title="Voir la vidéos">
                                     <span class="vignette">
-                                        <img aria-hidden="true" alt=""
+                                        <img aria-hidden="true" alt="Voir la vidéos"
                                              src="//i.ytimg.com/vi_webp/{$i.video}/default.webp"
                                              class="img-responsive">
+                                        <div class="vignette-over"></div>
                                         </span>
                             </a>
                         </div>
-                        <div class="col-md-5">
+                        <div class="col-md-6">
                             <a href="{$smarty.const.BASE_URL|escape}/{$rubrique}/{$i.id}/{$i.slug}">
                                 <h4>{$i.title}</h4>
                             </a>

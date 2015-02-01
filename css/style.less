@@ -863,15 +863,51 @@ section {
 .aside {
     &-videos {
         border: 1px solid @gris;
+      .row{
+        position: relative;
+      }
+      .row:hover{
+        .vignette > div {
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.64);
+          display: block;
+          position: absolute;
+          top: 0;
+        }
+
+        &:before{
+          content: "";
+          position: absolute;
+          height: 0px;
+          width: 0px;
+          /* border-radius: 3px; */
+          top: 14px;
+          left: 60px;
+          border-top: 15px solid transparent;
+          border-left: 30px solid #FFFFFF;
+          border-bottom: 15px solid transparent;
+          z-index: 9;
+          cursor: pointer;
+        }
+
+      }
 
         .vignette {
             height: 61px;
             position: relative;
             overflow: hidden;
             display: inline-block;
+
+          &:hover > div{
+            display: block;
+          }
+
+
+
             & > img {
                 position: relative;
-                top: -10px;
+                top: -11px;
             }
 
         }
