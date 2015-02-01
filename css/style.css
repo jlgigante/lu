@@ -750,6 +750,17 @@ section .bg-h1 {
 .aside-videos .row {
   position: relative;
 }
+.aside-videos .row div:first-child {
+  padding-right: 0;
+  margin-right: 0;
+}
+.aside-videos .row div:last-child {
+  padding-left: 0;
+  margin-left: 0;
+}
+.aside-videos .row:hover {
+  transition: all 0.3s;
+}
 .aside-videos .row:hover .vignette > div {
   width: 100%;
   height: 100%;
@@ -757,21 +768,7 @@ section .bg-h1 {
   display: block;
   position: absolute;
   top: 0;
-}
-.aside-videos .row:hover:before {
-  content: "";
-  position: absolute;
-  height: 0px;
-  width: 0px;
-  /* border-radius: 3px; */
-
-  top: 14px;
-  left: 60px;
-  border-top: 15px solid transparent;
-  border-left: 30px solid #FFFFFF;
-  border-bottom: 15px solid transparent;
-  z-index: 9;
-  cursor: pointer;
+  transition: all 0.2s;
 }
 .aside-videos .vignette {
   height: 61px;
@@ -779,8 +776,28 @@ section .bg-h1 {
   overflow: hidden;
   display: inline-block;
 }
-.aside-videos .vignette:hover > div {
+.aside-videos .vignette > div {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.23);
   display: block;
+  position: absolute;
+  top: 0;
+  transition: all 0.2s;
+}
+.aside-videos .vignette > div:after {
+  content: "";
+  position: absolute;
+  height: 0px;
+  width: 0px;
+  /* border-radius: 3px; */
+
+  top: 18px;
+  left: 50px;
+  border-top: 12px solid transparent;
+  border-left: 22px solid #FFFFFF;
+  border-bottom: 12px solid transparent;
+  cursor: pointer;
 }
 .aside-videos .vignette > img {
   position: relative;
