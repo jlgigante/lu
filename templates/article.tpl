@@ -52,6 +52,13 @@
                     <div class="visuel{if $rubrique == 'conseils-et-astuces'} col-xs-4{/if}">
                         <img src="{$smarty.const.BASE_URL}/images/art_{$rubrique}_{$article.visuel.0}"
                              alt="{$article.title|strip_tags}" class="visuel">
+
+                        {if $article.id === 1}
+                            <div class="legende" style="text-align: right;">
+                                <span style="font-size: 0.750em; font-style: italic;">Champ de blé LU’Harmony dans l’Oise</span>
+                            </div>
+                        {/if}
+
                     </div>
                 {/if}
 

@@ -83,9 +83,8 @@ $art1 = "<strong>Du grain de blé au biscuit : tous engagés.</strong> Agriculte
 <strong>Une Charte exigeante à chaque étape de la culture du blé.</strong>
 Cette filière, ce sont des milliers d’hommes et de femmes mobilisés au quotidien autour de 49 pratiques agricoles destinées à améliorer la culture du blé. Parmi elles, la rotation des parcelles, l’observation poussée du climat ou encore l’utilisation de technologies de pointe pour ne traiter qu’en derniers recours et de façon ciblée. Chaque intervention sur une parcelle de blé LU’Harmony est rigoureusement répertoriée et chaque année, des contrôles sont réalisés par un organisme indépendant sur 10 % des agriculteurs partenaires et 100 % des meuniers.
 
-<strong>Des effets positifs sur la biodiversité locale.</strong> Ces pratiques agricoles contribuent à préserver la biodiversité locale ; c’est d’ail- leurs un des engagements fondateurs de la Charte LU’Harmony.
-Bourdon en train de butiner une fleur de phacélie.
-Pourquoi ? Parce que 70 % des fruits et légumes (1) que nous man-geons dépendent directement des insectes pollinisateurs. Pour aller plus loin dans leur préservation et avoir une action positive directe, 3 % de la surface des champs de blé LU’Harmony sont dédiés à l’implantation d’une zone fleurie qui attire et nourrit une grande diversité de pollinisateurs. Et l’engagement porte ses fruits : en 5 ans la surface dédiée aux pollinisateurs est passée de 30 à 700 hectares.
+<strong>Des effets positifs sur la biodiversité locale.</strong> Ces pratiques agricoles contribuent à préserver la biodiversité locale ; c’est d’ailleurs un des engagements fondateurs de la Charte LU’Harmony.
+Pourquoi ? Parce que 70 % des fruits et légumes (1) que nous mangeons dépendent directement des insectes pollinisateurs. Pour aller plus loin dans leur préservation et avoir une action positive directe, 3 % de la surface des champs de blé LU’Harmony sont dédiés à l’implantation d’une zone fleurie qui attire et nourrit une grande diversité de pollinisateurs. Et l’engagement porte ses fruits : en 5 ans la surface dédiée aux pollinisateurs est passée de 30 à 700 hectares.
 
 <strong>Et demain.</strong> La Charte Harmony a essaimé en Europe. Par exemple, en Espagne les usines des biscuits Fontaneda utilisent des blés Harmony cultivés par des agriculteurs espagnols. Les bonnes pratiques n’ont pas fini de gagner du terrain !
 
@@ -133,7 +132,7 @@ $articles_content = array('title' => 'Les conseils et astuces de la semaine',
         1 => array(
             'id' => 1,
             'title' => "Culture du blé : toute une filière se mobilise",
-            'chapeau' => "Quand on sait que le blé est l’ingrédient principal de ses biscuits, on comprend pourquoi LU s’est entouré d’hommes et de femmes engagés, pour mettre en place la filière LU’Harmony.",
+            'chapeau' => "Depuis 7 ans, LU  fédère toute la filière blé autour de pratiques agricoles plus respectueuses de l’environnement, de la biodiversité locale, et au service  de la qualité des biscuits. Bilan sur ces engagements longue portée.",
             'article' => $art1,
             "visuel" => array("1_1.jpg"),
             "video" => "",
