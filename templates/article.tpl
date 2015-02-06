@@ -26,7 +26,6 @@
                 </div>
                 <div class="row">
 
-                    <h3>Infographie</h3>
 
                     <div class="col-md-12">
                         <img src="{$smarty.const.BASE_URL}/images/art_{$rubrique}_{$article.visuel.3}"
