@@ -11,7 +11,7 @@
                             <a href="{$smarty.const.BASE_URL|escape}/{$rubrique}/{$i.id}/{$i.slug}" title="Voir la vidéos">
                                     <span class="vignette">
                                         <img aria-hidden="true" alt="Voir la vidéos"
-                                             src="//i.ytimg.com/vi_webp/{$i.video}/default.webp"
+                                             src="//i.ytimg.com/vi/{$i.video}/default.jpg"
                                              class="img-responsive">
                                         <div class="vignette-over"></div>
                                         </span>

@@ -3,9 +3,17 @@
     <article class="bd transparent">
         <a href="{$smarty.const.BASE_URL|escape}/{$article.slug}/{$article.content.2.id}/{$article.content.2.slug}">
             <h2>{$article.content.2.title}</h2>
+            </a>
+        <a href="{$smarty.const.BASE_URL|escape}/{$article.slug}/{$article.content.2.id}/{$article.content.2.slug}">
             <img src="{$smarty.const.BASE_URL}/images/art_articles_{$article.content.2.visuel.0}"
                  alt="{$article.content.2.title|strip_tags}" class="img-responsive"/>
         </a>
+            {if $article.content.2.title}
+                <div class="legende" style="text-align: right;">
+                    <span style="font-size: 0.750em; font-style: italic;">Champ de blé LU’Harmony dans l’Oise</span>
+                </div>
+            {/if}
+
 
         <p>
             <a href="{$smarty.const.BASE_URL|escape}/{$article.slug}/{$article.content.2.id}/{$article.content.2.slug}">

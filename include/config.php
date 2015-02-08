@@ -5,7 +5,7 @@
 
 
 
-define("SITE_NAME", "Luc - Harmony");
+define("SITE_NAME", "Lu - Harmony");
 define("SITE_DESCRIPTION", "Harmony");
 /* error_reporting('E_ALL'); */
 //
@@ -22,7 +22,6 @@ define('COUNTRY_CODE',  $param['lang'] ) ;
 
 //TODO: fix le servcer name
 if( $_SERVER["SERVER_NAME"] == 'projets.troisw-agenceweb.com' ) {
-	
 
 	$baseUrl = "http://projets.troisw-agenceweb.com/lu/harmony";
 	$currentUrl = $baseUrl.$_SERVER["REQUEST_URI"];

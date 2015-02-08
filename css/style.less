@@ -127,7 +127,8 @@ div.header h3 {
     margin: 10px 0;
     position: relative;
     left: 0px;
-    width: 200px;
+    max-width: 300px;
+    text-transform: uppercase;
     background: white;
 }
 
@@ -169,6 +170,10 @@ div.header h3 {
 }
 
 .blog-sidebar {
+
+  .aside-videos{
+    padding-top: 20px;
+  }
 
     &-social {
         text-align: center;
@@ -313,6 +318,9 @@ h1 {
     font-size: 1.25em;
     color: @black;
     font-weight: bold;
+  span{
+    display: none;
+  }
 }
 
 h2, h3 {
@@ -596,6 +604,7 @@ a:hover {
     border: 1px solid @gris;
     .aside-videos {
         border: none;
+        //padding-top: 10px;
 
         li:first-child {
             margin-top: 20px;
@@ -863,6 +872,13 @@ section {
 .aside {
     &-videos {
         border: 1px solid @gris;
+
+
+      li {
+        margin-bottom: 10px;
+
+      }
+
       .row{
         position: relative;
 
@@ -947,7 +963,7 @@ section {
     &-articles {
 
         .row {
-            padding: 0;
+            padding-top: 10px;
             margin: 0;
         }
 
