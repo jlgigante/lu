@@ -1,5 +1,6 @@
+<script type="text/javascript" async="async" src="//api.adyoulike.com/tag.js"></script>
 <script>
-
+{literal}
     (function (i, s, o, g, r, a, m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 
   (i[r].q=i[r].q||[]).push(arguments)}, i[r].l = 1 * new Date();
@@ -10,20 +11,19 @@
     a.src = g;
     m.parentNode.insertBefore(a, m)
 
-    })
+    }
     (window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
 
     ga('create', 'UA-32767203-35', 'auto');
 
     ga('send', 'pageview');
-
-
+{/literal}
 </script>
 
 
 <script>
-
+    {literal}
     (function (i, s, o, g, r, a, m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 
   (i[r].q=i[r].q||[]).push(arguments)}, i[r].l = 1 * new Date();
@@ -42,5 +42,5 @@
 
     ga('send', 'pageview');
 
-
+    {/literal}
 </script>

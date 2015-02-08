@@ -53,16 +53,16 @@
         <div class="col-md-12">
 
             <div class="header">
-                <h3>Contenu conçu et proposé par LU</h3>
+                <h3>
+                    <span>PUBLI-COMMUNIQUÉ par </span>
+                    <img src="{$smarty.const.BASE_URL|escape}/images/LOGO_HARMONY.png" alt="LU'Harmony"/>
+                </h3>
             </div>
         </div>
     </div>
 
     <div class="row">
         <div class="col-md-12">
-            <a href="{$smarty.const.BASE_URL|escape}/accueil">
-                <h1><img src="{$smarty.const.BASE_URL|escape}/images/LOGO_HARMONY.png" alt="LU'Harmony"/>
-            <span>Charte LU'Harmony</span></h1>
-            </a>
+            <a href="{$smarty.const.BASE_URL|escape}/accueil"> <h1>Charte LU'Harmony</h1></a>
         </div>
     </div>
