@@ -55,7 +55,7 @@
             <div class="header">
                 <h3>
                     <span>PUBLI-COMMUNIQUÉ par </span>
-                    <img src="{$smarty.const.BASE_URL|escape}/images/LOGO_HARMONY.png" alt="LU'Harmony"/>
+                    <img src="{$smarty.const.BASE_URL|escape}/images/LOGO_HARMONY.png" alt="LU'Harmony" height="33"/>
                 </h3>
             </div>
         </div>
